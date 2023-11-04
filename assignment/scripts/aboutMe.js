@@ -14,7 +14,7 @@ let fullName = firstName + lastName;
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
-let luckyNumber = 7;
+let luckyNumber = 2;
   console.log( luckyNumber );
 
 
@@ -42,15 +42,15 @@ let pets = 6;
   console.log( pets );
 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 10;
+let friendsPets = 1;
   console.log( friendsPets );
 
 // 10 - Add two pets to your `pets` variable
 pets += 2;
-  console.log( friendsPets );
+  console.log( pets );
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-const allowedPets = 3;
+const allowedPets = 2;
   console.log( allowedPets );
 
 
@@ -93,6 +93,20 @@ let diceRoll = "Try again later."
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
+
+pets = 1;
+let petStatus;
+
+if(pets < allowedPets){
+  petStatus = "I can have more pets!"
+} 
+  else if(pets === allowedPets){
+  petStatus = "I have enough pets."
+} 
+  else if(pets > allowedPets){
+  petStatus = "Oh no, I have too many pets!"
+}
+console.log(petStatus);
 
 
 // STRETCH GOALS:
