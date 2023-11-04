@@ -28,7 +28,7 @@ let introduction = 'My name is ' + fullName + ', and I think ' + luckyNumber + '
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
-let adventurous = true
+let adventurous = false
   console.log(  adventurous );
 
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -94,7 +94,7 @@ let diceRoll = "Try again later."
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 
-pets = 1;
+
 let petStatus;
 
 if(pets < allowedPets){
@@ -117,6 +117,18 @@ console.log(petStatus);
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 
+let mostPets;
+
+if(pets <= friendsPets){
+  mostPets = friendsPets;
+  console.log('My friend has more pets')
+}
+else if(pets >= friendsPets){
+  mostPets = pets;
+  console.log('I have more pets')
+}
+console.log(mostPets);
+
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -126,8 +138,42 @@ console.log(petStatus);
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
 
+// switch(expression) {
+//  case x:
+    // code block
+//    break;
+//  case y:
+    // code block
+ //   break;
+ // default:
+    // code block
+//}
+
+let luckyResult = luckyNumber; 
+
+switch (luckyNumber) {
+  case 1:
+    console.log("First is the worst");
+    break;
+  case 2:
+    console.log( "Second is the best" );
+    break;
+  case 3:
+    console.log( "Third is the one with the polka dot dress" );
+    break;
+  default:
+    console.log( "Luck is what happens when preparation meets opportuity" );
+    break;
+}
+console.log(luckyResult);
+
+
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
+//condition ? exprIfTrue : exprIfFalse
+
+result = adventurous === true ? "Adventures are great!" : "How about we stay home?";
+console.log( result );
 
 
 
