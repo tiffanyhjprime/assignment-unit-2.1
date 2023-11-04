@@ -28,7 +28,7 @@ let introduction = 'My name is ' + fullName + ', and I think ' + luckyNumber + '
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
-let adventurous = false
+let adventurous = true
   console.log(  adventurous );
 
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -75,6 +75,14 @@ else{
 //      Console log the value of `diceRoll`
 
 let diceRoll = "Try again later."
+
+  if(luckyNumber === 2 && adventurous === true){
+    diceRoll = "Roll the dice!";
+  }
+
+  else {
+    console.log(diceRoll);
+  }
 
 
 // 14 - Create a variable called `petStatus`. 
